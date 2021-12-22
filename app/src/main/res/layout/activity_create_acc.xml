@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_acc"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/first_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:hint="first name"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/last_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:hint="last name"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/password"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:inputType="numberPassword"
+        android:hint="enter a password"
+        android:gravity="center"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdemployee"
+            android:text="Employee"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:id="@+id/rdcustomer"
+            android:layout_marginStart="10dp"/>
+
+
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/create"
+        android:backgroundTint="#D3D3D3"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:onClick="create_acc"
+        />
+
+</LinearLayout>
