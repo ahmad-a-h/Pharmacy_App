@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 EditText ed1,ed2;
 Button btn1,btn2,btn3;
 TextView result;
+
 
 
     @Override
@@ -28,53 +30,20 @@ TextView result;
         btn3=findViewById(R.id.create);
         result=(TextView)findViewById(R.id.tvResult);
         Intent i=new Intent(this,create_acc.class);
-
+        Intent L=new Intent(this,menu.class);
 
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent cur=getIntent();
-                result.setText(i.getStringExtra("DATA"));
-
-                //if(ed1.getText().toString()!=i.getStringExtra()))
-                //{
-                  //  ed1.setError("invalid username");
-                 //   ed1.setTextColor(Color.RED);
-                   // ed1.setText(null);
-                  //  ed1.setHint(null);
-                   // ed1.requestFocus();
-               // }
-               // if(ed2.getText().toString().trim().length()!=0)
-               // {
-                  //  ed1.setError("invalid password");
-                   // ed1.setTextColor(Color.RED);
-                   // ed1.setText(null);
-                    //ed1.setHint(null);
-                   // ed1.requestFocus();
-              //  }
-
-            }
-        });
+                startActivity(L);
 
 
-
-
-
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(i);
 
 
             }
         });
-
-
 
 
 

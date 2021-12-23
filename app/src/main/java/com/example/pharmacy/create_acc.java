@@ -28,17 +28,6 @@ SQLiteDatabase db;
         db=openOrCreateDatabase("accountdb", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS pharmacy(fname VARCHAR,lname VARCHAR,password VARCHAR);");
 
-        //Intent c=new Intent();
-        //btn.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-            //public void onClick(View v) {
-
-
-
-
-            //}
-        //});
-
 
 
 
@@ -119,9 +108,9 @@ SQLiteDatabase db;
         StringBuffer buffer=new StringBuffer();
         while(c.moveToNext())
         {
-            buffer.append("ID: "+c.getString(0)+"\n");
-            buffer.append("Name: "+c.getString(1)+"\n");
-            buffer.append("Grade: "+c.getString(2)+"\n\n");
+            buffer.append("first_name: "+c.getString(0)+"\n");
+           // buffer.append("Name: "+c.getString(1)+"\n");
+            buffer.append("password: "+c.getString(2)+"\n\n");
         }
 
         //showMessage("Student Details", buffer.toString());
