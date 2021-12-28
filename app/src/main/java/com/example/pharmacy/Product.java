@@ -4,16 +4,14 @@ public class Product {
     private int pid;
     private String name;
     private int quantity;
-    private double price;
-    private String category;
-    private int img;
+    private int price;
 
-    public Product(int img) {
+
+    public Product(int pid, String name, int quantity, int price) {
         this.pid = pid;
         this.name = name;
         this.quantity = quantity;
         this.price = price;
-        this.category = category;
 
     }
 
@@ -21,11 +19,8 @@ public class Product {
     public String toString() {
         return "ID: " + pid +
                 "\nName: " + name +
-                "\nAvailable Quantity: " + quantity +
-                "\nProduct Price: " + price +
-                "\nCategory: " + category;
-    }
-    public int getImage() {
-        return img;
+                "\nQuantity: " + quantity +
+                "\nPrice: " + price     ;
     }
 }
+

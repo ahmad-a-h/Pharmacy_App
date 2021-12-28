@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".items"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                        android:id="@+id/img1"
+                        android:src="@drawable/panadol"
+                    android:onClick="open"/>
+                <ImageButton
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/img2"
+                    android:src="@drawable/panadolextra"
+                    android:onClick="open2"/>
+
+
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+                android:id="@+id/lstv"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
