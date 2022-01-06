@@ -68,7 +68,7 @@
         android:backgroundTint="#D3D3D3"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
-        android:onClick="create_acc"
+
         />
 
 </LinearLayout>

@@ -4,10 +4,10 @@ public class Product {
     private int pid;
     private String name;
     private int quantity;
-    private int price;
+    private Double price;
 
 
-    public Product(int pid, String name, int quantity, int price) {
+    public Product(int pid, String name, int quantity, Double price) {
         this.pid = pid;
         this.name = name;
         this.quantity = quantity;

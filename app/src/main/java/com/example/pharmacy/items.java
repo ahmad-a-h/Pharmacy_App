@@ -29,16 +29,17 @@ public class items extends AppCompatActivity {
 ListView ls;
 ImageButton image,image2;
 int img_id;
-    @SuppressLint("WrongThread")
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
-
         ls = findViewById(R.id.lstv);
         image=findViewById(R.id.img1);
         image2=findViewById(R.id.img2);
 
+        Intent n=getIntent();
         ArrayList<Product> products = new ArrayList<Product>();
 
         ArrayAdapter<Product> adapter = new ArrayAdapter<Product>(this, android.R.layout.simple_list_item_1,products);
@@ -59,7 +60,7 @@ int img_id;
                         int id = row.getInt("id");
                         String name = row.getString("name");
                         int quantity = row.getInt("quantity");
-                        int price = row.getInt("price");
+                        double price = row.getInt("price");
                         //String category = row.getString("category");
 
                         Product p=new Product(id, name, quantity, price);
@@ -91,7 +92,6 @@ int img_id;
         Intent details=new Intent(this,p_details.class);
         img_id=1;
         details.putExtra("id",img_id);
-
         startActivity(details);
 
     }
@@ -100,7 +100,6 @@ int img_id;
         Intent details=new Intent(this,p_details.class);
         img_id=2;
         details.putExtra("id",img_id);
-
         startActivity(details);
     }
 }
