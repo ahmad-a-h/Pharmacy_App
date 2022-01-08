@@ -61,7 +61,6 @@ int buy=0;
         int ID=getIntent().getIntExtra("id",0);
         if(ID==1) {
             String url = "https://pharmacyappprojectdb.000webhostapp.com/pharmacy/getonepharmacy.php?id=1";
-
             JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
                 @Override
                 public void onResponse(JSONArray response) {
@@ -123,6 +122,7 @@ int buy=0;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ArrayList<Integer>buy=new ArrayList<Integer>();
 
             }
         });
