@@ -1,18 +1,14 @@
 package com.example.pharmacy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -22,7 +18,6 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 public class items extends AppCompatActivity {
@@ -102,4 +97,27 @@ int img_id;
         details.putExtra("id",img_id);
         startActivity(details);
     }
+    public void open3(View view) {
+        Intent details=new Intent(this,p_details.class);
+        img_id=3;
+        details.putExtra("id",img_id);
+
+        startActivity(details);
+    }
+    public void open4(View view) {
+        Intent details=new Intent(this,p_details.class);
+        img_id=4;
+        details.putExtra("id",img_id);
+
+        startActivity(details);
+    }
+    public void open5(View view) {
+        Intent details=new Intent(this,p_details.class);
+        img_id=5;
+        details.putExtra("id",img_id);
+
+        startActivity(details);
+    }
+
+
 }

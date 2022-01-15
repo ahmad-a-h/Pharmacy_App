@@ -1,47 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".items"
-    android:orientation="vertical">
-
+    android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:orientation="horizontal"
-                >
+            android:layout_height="match_parent"
+            tools:context=".items"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lstv"
+                    android:layout_width="222dp"
+                    android:layout_height="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title1"
+                    android:text="panadol"
+                    android:textColor="#E61C1C"
+                    android:textSize="25dp"/>
+
                 <ImageButton
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                        android:id="@+id/img1"
-                        android:src="@drawable/panadol"
-                    android:onClick="open"/>
+                    android:id="@+id/img1"
+                    android:onClick="open"
+                    android:layout_width="411dp"
+                    android:layout_height="289dp"
+                    android:layout_marginLeft="3dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="42dp"
+                    android:maxHeight="42dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/panadol" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title2"
+                    android:text="advil "
+                    android:textColor="#E61C1C"
+                    android:textSize="25dp"/>
+
                 <ImageButton
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
                     android:id="@+id/img2"
-                    android:src="@drawable/panadolextra"
-                    android:onClick="open2"/>
+                    android:onClick="open2"
+                    android:layout_width="411dp"
+                    android:layout_height="276dp"
+                    android:layout_marginLeft="3dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="42dp"
+                    android:maxHeight="42dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/advil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title3"
+                    android:text="cardiheck "
+                    android:textColor="#E61C1C"
+                    android:textSize="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/img3"
+                    android:onClick="open3"
+                    android:layout_width="411dp"
+                    android:layout_height="276dp"
+                    android:layout_marginLeft="3dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="42dp"
+                    android:maxHeight="42dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cardicheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title4"
+                    android:text="vitamin C "
+                    android:textColor="#E61C1C"
+                    android:textSize="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/img4"
+                    android:onClick="open4"
+                    android:layout_width="411dp"
+                    android:layout_height="276dp"
+                    android:layout_marginLeft="3dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="42dp"
+                    android:maxHeight="42dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vitaminc" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title5"
+                    android:text="panadol extra "
+                    android:textColor="#E61C1C"
+                    android:textSize="25dp"/>
+
+                <ImageButton
+                    android:id="@+id/img5"
+                    android:onClick="open5"
+                    android:layout_width="411dp"
+                    android:layout_height="276dp"
+                    android:layout_marginLeft="3dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="42dp"
+                    android:maxHeight="42dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/panadolextra" />
+
 
 
 
         </LinearLayout>
-        <ListView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-                android:id="@+id/lstv"/>
-
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+</ScrollView>
